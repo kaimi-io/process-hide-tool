@@ -1,0 +1,45 @@
+#include <Windows.h>
+#include "resource.h"
+
+IDD_MAIN DIALOGEX 6,5,230,60
+CAPTION "Hidden Run"
+FONT 8,"MS Sans Serif",0,0,0
+STYLE WS_VISIBLE|WS_CAPTION|WS_SYSMENU|WS_MINIMIZEBOX|DS_CENTER
+BEGIN
+  CONTROL "Driver path",IDC_STC1,"Static",WS_CHILD|WS_VISIBLE,4,5,34,9
+  CONTROL "Run Hidden...",IDC_START,"Button",WS_CHILD|WS_VISIBLE|WS_DISABLED|WS_TABSTOP,172,42,54,13
+  CONTROL "",IDC_PATH,"Edit",WS_CHILD|WS_VISIBLE|WS_TABSTOP|ES_AUTOHSCROLL,42,3,164,13,WS_EX_CLIENTEDGE
+  CONTROL "...",IDC_BROWSE,"Button",WS_CHILD|WS_VISIBLE|WS_TABSTOP,210,3,16,13
+  CONTROL "Load Driver",IDC_LOAD,"Button",WS_CHILD|WS_VISIBLE|WS_TABSTOP,172,20,54,13
+  CONTROL "Symbolic link",IDC_SYM,"Button",WS_CHILD|WS_VISIBLE|WS_TABSTOP|BS_AUTOCHECKBOX,42,20,54,9
+  CONTROL "Run as user",IDC_RUNAS,"Button",WS_CHILD|WS_VISIBLE|WS_TABSTOP|BS_AUTOCHECKBOX,100,20,62,9
+END
+
+IDI_ICON    ICON    "icon.ico"
+
+IDR_VERSION VERSIONINFO
+FILEVERSION 1,0,0,0
+PRODUCTVERSION 1,0,0,0
+FILEOS 0x00000004
+FILETYPE 0x00000001
+BEGIN
+  BLOCK "StringFileInfo"
+  BEGIN
+    BLOCK "FFFF04B0"
+    BEGIN
+      VALUE "FileVersion", "1.0.0.0\0"
+      VALUE "ProductVersion", "1.0.0.0\0"
+      VALUE "CompanyName", "kaimi.ru\0"
+      VALUE "FileDescription", "Hidden Run\0"
+      VALUE "InternalName", "hidden_run.exe\0"
+      VALUE "LegalCopyright", "(c) kaimi.ru\0"
+      VALUE "LegalTrademarks", "(c) kaimi.ru\0"
+      VALUE "OriginalFilename", "hidden_run.exe\0"
+    END
+  END
+  BLOCK "VarFileInfo"
+  BEGIN
+    VALUE "Translation", 0xFFFF, 0x04B0
+  END
+END
+

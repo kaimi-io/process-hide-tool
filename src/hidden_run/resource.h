@@ -1,0 +1,10 @@
+#define IDR_VERSION 1
+#define IDD_MAIN 1000
+#define IDC_STC1 1001
+#define IDC_PATH 1002
+#define IDC_BROWSE 1003
+#define IDC_LOAD 1004
+#define IDC_START 1005
+#define IDC_SYM 1006
+#define IDC_RUNAS 1007
+#define IDI_ICON 1008
